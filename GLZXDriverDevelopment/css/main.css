@@ -1,0 +1,12 @@
+body{
+    overflow: visible;
+    background: #1C2430;
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundIMG {
+    height: 100vh;
+    background: url('../images/Vector.png') no-repeat center center fixed;
+    background-size: 200%;
+}
