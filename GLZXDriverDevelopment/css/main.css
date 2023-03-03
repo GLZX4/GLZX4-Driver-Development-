@@ -4,9 +4,17 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.overlayGrad {
+position: absolute;
+width: 25%;
+height: 25%;
+top: 0px;
+left: 0px;
+background: linear-gradient(125deg, rgba(168,63,217,0) - 1.5%, rgba(217,217,217,0)44%);
+}
 .backgroundIMG {
     height: 100vh;
     background: url('../images/Vector.png') no-repeat center center fixed;
     background-size: 200%;
+    align-self: auto;
 }
