@@ -4,17 +4,121 @@ body{
     margin: 0;
     padding: 0;
 }
-.overlayGrad {
-position: absolute;
-width: 25%;
-height: 25%;
-top: 0px;
-left: 0px;
-background: linear-gradient(125deg, rgba(168,63,217,0) - 1.5%, rgba(217,217,217,0)44%);
+/*Code for background bluring adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter*/
+/*Code for using RBGA values for colours adapted from: https://www.w3schools.com/css/css_colors_rgb.asp*/
+.headerGradient{
+    position: absolute;
+    width: 115%;
+    height: 400px;
+    top: -22%;
+    left:-4%;
+    background-color: rgba(158, 57, 238, 0.2);
+    transform: rotate(-6deg);
+    border: 5px solid white;
+    box-sizing: border-box;
+    z-index: -1;
+    backdrop-filter: blur(20px);
 }
 .backgroundIMG {
-    height: 100vh;
-    background: url('../images/Vector.png') no-repeat center center fixed;
-    background-size: 200%;
-    align-self: auto;
+    height: 200vh;
+    background: url('../images/BackgroundIMG.png') center center;
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: center;
+    z-index: -99;
+}
+.glzxText{
+    position: absolute;
+    left: 6%;
+    right: 60%;
+    top: 6%;
+    bottom: 55%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFB342;
+}
+.driverText{
+    position: absolute;
+    left: 15%;
+    top: 33%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.glzxTextALT{
+    position: absolute;
+    left: 5%;
+    right: 60%;
+    top: -30%;
+    bottom: 55%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFB342;
+}
+.driverTextALT {
+    position: absolute;
+    left: 15%;
+    top: 12%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.mainTabs {
+    left: 47%;
+    top: 5%;
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+}
+.mainTabs a {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+a:hover {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bottomBanner {
+        height: 10%;
+        width: 100%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        z-index: 1;;
 }

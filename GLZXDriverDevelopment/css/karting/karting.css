@@ -1,0 +1,89 @@
+body {
+    overflow-x: hidden;
+}
+/*code for backdrop filter adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
+.tile1 {
+    height: 60%;
+    width: 28%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    z-index: 1;;
+    backdrop-filter: blur(2px);
+  }
+.tile1img {
+    position: absolute;
+    background-position: 50% 35%;
+    background-image: url('../../images/iRacingMax.png');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+.tile2 {
+    height: 60%;
+    width: 28%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    z-index: 1;;
+    backdrop-filter: blur(2px);
+}
+.tile3 {
+    height: 60%;
+    width: 28%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+
+}
+.subtile {
+    height: 152px;
+    width: 100%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    position: relative;
+    border: 2px solid white;
+    top: 398px;
+    left: -0.5%;
+}
+.subtileText {
+    position: absolute;
+    left: 2%;
+    top: 0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    margin: 2%;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.speratorBox {
+    height: 10%;
+    width: 89%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    transform: translate(-50,-50);
+    top: 120%;
+    left: 6%;
+    z-index: 1;;
+    backdrop-filter: blur(2px);
+}

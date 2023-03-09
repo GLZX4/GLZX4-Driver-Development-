@@ -2,10 +2,11 @@
     position: absolute;
     width: 80%;
     height: 20%;
-    left: 20px;
+    left: 22px;
     top: 20px;
     z-index: 1;
 }
+/*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path*/
 .shape {
     position: absolute;
     width: 119%;
@@ -14,7 +15,8 @@
     clip-path: polygon(0 0, 150% 0%, 100% 60%, 0 100%);
     border-radius: 20px;
   }
-/*code for filter below adapted from https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css*/
+  
+/*code for filter below adapted from https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
   .shape .headerIMG {
     position: absolute;
     background: url('../images/DSC_8968-L.jpg') no-repeat center center fixed;
@@ -26,38 +28,9 @@
     z-index: -1;
     filter: brightness(35%);
 }
-.glzxText{
-    position: absolute;
-    left: 6%;
-    right: 60%;
-    top: 6%;
-    bottom: 55%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFB342;
-}
-.driverText{
-    position: absolute;
-    left: 15%;
-    top: 33%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
 .tabs {
     position: absolute;
-    left: 52%;
+    left: 55%;
     top: 5%;
     font-family: 'Inter';
     font-style: normal;
@@ -82,3 +55,13 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+.downArrow {
+  position: absolute;
+  background: url(../images/IndexDownArrow.png) no-repeat center center fixed;
+  width:30px;
+  height:30px;
+  top: 70%;
+  left:45%;
+  z-index: 2;
+}
+
