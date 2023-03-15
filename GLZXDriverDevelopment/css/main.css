@@ -10,48 +10,49 @@ body{
     position: absolute;
     width: 115%;
     height: 400px;
-    top: -22%;
-    left:-4%;
+    top: -200px;
+    left:-40px;
     background-color: rgba(158, 57, 238, 0.2);
     transform: rotate(-6deg);
     border: 5px solid white;
     box-sizing: border-box;
-    z-index: -1;
+    z-index: -99;
     backdrop-filter: blur(20px);
 }
 .backgroundIMG {
     height: 200vh;
     background: url('../images/BackgroundIMG.png') center center;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y; 
+    background-repeat: repeat-x;
     background-size: auto;
     background-position: center;
-    z-index: -99;
+    z-index: 0;
 }
 .glzxText{
-    position: absolute;
-    left: 6%;
-    right: 60%;
-    top: 6%;
-    bottom: 55%;
+    position: relative;
+    left: 5%;
+    top: 65%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
     line-height: 40px;
+    transform: rotate(6deg);
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFB342;
 }
 .driverText{
-    position: absolute;
-    left: 15%;
-    top: 33%;
+    position: relative;
+    left: 10%;
+    top: 72%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     display: flex;
+    transform: rotate(6deg);
     align-items: center;
     text-align: center;
     color: #fff;
@@ -59,13 +60,12 @@ body{
 .glzxTextALT{
     position: absolute;
     left: 5%;
-    right: 60%;
-    top: -30%;
+    top: -25%;
     bottom: 55%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 64px;
+    font-size: 72px;
     line-height: 40px;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ body{
 .driverTextALT {
     position: absolute;
     left: 15%;
-    top: 12%;
+    top: 16%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -86,8 +86,8 @@ body{
     color: #fff;
 }
 .mainTabs {
-    left: 47%;
-    top: 5%;
+    right: 0%;
+    top: 0%;
     position: absolute;
     font-family: 'Inter';
     font-style: normal;
@@ -95,6 +95,7 @@ body{
     font-size: 24px;
     line-height: 0%;
     display: flex;
+    transform: rotate(0deg);
     justify-content: center;
     align-items: center;
     text-align: center;

@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/karting/karting.css">
+    <script src="js/KartingImageSlider.js"></script>
     <title>karting</title>
 </head>
 <body>
-    <div class="backgroundIMG"></div>
-    <div class="headerGradient"></div>
-    <div class="glzxTextALT">GL|ZX</div>
-    <div class="driverTextALT">Driver Development</div>
-    <div class="mainTabs">
-            <a class="home" href="index.html">Home</a>
-            <a class="esport" href="esports.html">E-Sports</a>
-            <a class="karting" href="karting.html">Karting</a>
-            <a class="accolades" href="accolades.html">Accolades</a>
-            <a class="contact" href="contact.html">Contact</a>
+    <h1>
+        <div class="backgroundIMG"></div>
+        <div class="headerGradient"></div>
+        <div class="glzxTextALT">GL|ZX</div>
+        <div class="driverTextALT">Driver Development</div>
+        <div class="mainTabs">
+                <a class="home" href="index.html">Home</a>
+                <a class="esport" href="esports.html">E-Sports</a>
+                <a class="karting" href="karting.html">Karting</a>
+                <a class="accolades" href="accolades.html">Accolades</a>
+                <a class="contact" href="contact.html">Contact</a>
+        </div>
+    </h1>
+
+    <div class="TileBar">
+        <div class="tileBarText">Personalized driver coaching</div>
     </div>
+
     <div class="tile1">
         <div class="subtile" class="subtileText">
             <div class="subtileText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit ipsum nobis sequi adipisci dicta numquam recusandae impedit est id, temporibus quasi nemo dolores fugiat assumenda delectus! A, quis labore.</div>
@@ -43,8 +51,33 @@
         </div>
         <div class="tile1img"></div>
     </div>
-    <div class="speratorBox"></div>
-    <div class="bottomBanner"></div>
 
+    <!--Code below for the image Scroller adapated from:https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <div class="imageScroller">
+
+        <div class="mySlides fade">
+            <div class="imageNumber ">1 / 3</div>
+            <img src="images/DSC_8968-L.jpg" style="width:100%">
+            <div class="captionText">Lorem ipsum dolor sit amet, consectetur </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="imageNumber ">2 / 3</div>
+            <img class="image" src="images/DSC_9640-XL.jpg" style="width:100%">
+            <div class="captionText">Lorem ipsum dolor sit amet, consectetur </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="imageNumber ">3 / 3</div>
+            <img class="image" class="image" src="images/iRacingMax.png" style="width:100%">
+            <div class="captionText">Lorem ipsum dolor sit amet, consectetur </div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+
+    
+    <div class="bottomBanner"></div>
 </body>
 </html>

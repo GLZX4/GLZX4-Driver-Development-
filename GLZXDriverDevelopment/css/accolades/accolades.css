@@ -4,9 +4,14 @@ body {
     margin: 0;
     padding: 0;
 }
+.linkText {
+    margin-left: 5%;
+    text-decoration: none;
+    color: rgb(163, 255, 213);
+}
 .kartIMG {
     position: absolute;
-    top: 60%;
+    top: 550px;
     left: -10%;
     height: 30vh;
     width: 120%;
@@ -16,10 +21,17 @@ body {
     z-index: 0;
     filter: brightness(55%);
 }
+.accoladeTitle1Container {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 15%;
+    width: 100%;
+}
 .accoladeTitle1 {
     position: absolute;
     height: 600px;
-    width: 80%;
+    width: 1000px;
     top: 50%;
     left: 0%;
     clip-path: polygon(100% 0, 100% 20%, 20% 30%, 0 30%, 0 0);
@@ -28,24 +40,53 @@ body {
     backdrop-filter: blur(2px);
     z-index: 1;
 }
+.accoladeTitle1Link {
+    height: 25%;
+    width: 37%;
+    background-color: rgba(158, 57, 238, 0.3);
+    border: 2px solid white;
+    position: relative;
+    top: 25%;
+    left: 0%;
+    z-index: 1;
+}
+.accoladeTitle1LinkText {
+    position: relative;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    display: flex;
+    color: white;
+    z-index: 1;
+}
 .accoladeTitle1Text {
-    position: absolute;
+    position: relative;
     top: 8%;
     left: 12%;
     font-family: inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 5vw;
     display: flex;
     color: white;
     z-index: 1;
 }
+.accoladeTitle2Container {
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    height: 15%;
+    width: 100%;
+}
 .accoladeTitle2 {
     position: absolute;
     height: 600px;
-    width: 100%;
+    width: 1000px;
     top: 80%;
-    left: 15%;
+    right: 0%;
     clip-path: polygon(0 20%, 70% 0, 100% 0, 100% 35%, 0 35%);
     background-color: rgba(158, 57, 238, 0.3);
     backdrop-filter: blur(2px);
@@ -58,7 +99,29 @@ body {
     font-family: inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 5vw;
+    display: flex;
+    color: white;
+    z-index: 1;
+}
+.accoladeTitle2Link {
+    height: 25%;
+    width: 45%;
+    background-color: rgba(158, 57, 238, 0.3);
+    border: 2px solid white;
+    position: relative;
+    top: 230%;
+    right: -55%;
+    z-index: 1;
+}
+.accoladeTitle2LinkText {
+    position: relative;
+    top: 10%;
+    left: 2%;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
     display: flex;
     color: white;
     z-index: 1;
@@ -66,9 +129,9 @@ body {
 .accoladeTitle3 {
     position: absolute;
     height: 600px;
-    width: 100%;
+    width: 1000px;
     top: 120%;
-    left: 15%;
+    right: 0%;
     clip-path: polygon(70% 30%, 100% 30%, 100% 0, 0 0, 0 20%);
     background-color: rgba(158, 57, 238, 0.3);
     backdrop-filter: blur(2px);
@@ -81,7 +144,7 @@ body {
     font-family: inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 5vw;
     display: flex;
     color: white;
     z-index: 1;
@@ -108,7 +171,7 @@ body {
     top: 150%;
     left: 0;
     right: 0;
-    z-index: 1;;
+    z-index: 1;
 }
 .accoladeTitleSquareText {
     position: absolute;
@@ -118,7 +181,7 @@ body {
     font-family: inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 3vw;
     display: flex;
     color: white;
     z-index: 1;

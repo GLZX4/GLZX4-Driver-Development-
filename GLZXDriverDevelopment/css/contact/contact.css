@@ -1,0 +1,29 @@
+body {
+    overflow-x: hidden;
+}
+.mapBox {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 80%;
+    height: 40%;
+}
+.findUs {
+    position: absolute;
+    height: 100px;
+    width: 80%;
+    background-color: rgba(158, 57, 238, 0.3);
+    border: 2px solid white;
+    margin: auto;
+    top: 35%;
+    left: 10%;
+    z-index: 1;
+}
+.findUsText {
+    position: relative;
+    text-align: center;
+    font-family: inter;
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+}
