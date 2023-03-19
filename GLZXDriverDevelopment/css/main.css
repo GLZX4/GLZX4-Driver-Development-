@@ -1,23 +1,9 @@
-body{
+ body{
+    height: 100%;
     overflow: visible;
     background: #1C2430;
     margin: 0;
     padding: 0;
-}
-/*Code for background bluring adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter*/
-/*Code for using RBGA values for colours adapted from: https://www.w3schools.com/css/css_colors_rgb.asp*/
-.headerGradient{
-    position: absolute;
-    width: 115%;
-    height: 400px;
-    top: -200px;
-    left:-40px;
-    background-color: rgba(158, 57, 238, 0.2);
-    transform: rotate(-6deg);
-    border: 5px solid white;
-    box-sizing: border-box;
-    z-index: -99;
-    backdrop-filter: blur(20px);
 }
 .backgroundIMG {
     height: 200vh;
@@ -27,6 +13,21 @@ body{
     background-size: auto;
     background-position: center;
     z-index: 0;
+}
+/*Code for background bluring adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter*/
+/*Code for using RBGA values for colours adapted from: https://www.w3schools.com/css/css_colors_rgb.asp*/
+.headerGradient{
+    position: absolute;
+    width: 115%;
+    height: calc(100vh - 500px);
+    top: -200px;
+    left:-40px;
+    background-color: rgba(158, 57, 238, 0.2);
+    transform: rotate(-6deg);
+    border: 5px solid white;
+    box-sizing: border-box;
+    z-index: -99;
+    backdrop-filter: blur(20px);
 }
 .glzxText{
     position: relative;
@@ -85,7 +86,7 @@ body{
 }
 .mainTabs {
     right: 0%;
-    top: 0%;
+    top: 2%;
     position: absolute;
     font-family: 'Inter';
     font-style: normal;

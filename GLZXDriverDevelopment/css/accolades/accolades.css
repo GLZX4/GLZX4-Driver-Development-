@@ -30,62 +30,54 @@ body {
 }
 .accoladeTitle1 {
     position: absolute;
-    height: 600px;
-    width: 1000px;
-    top: 50%;
+    height: 500%;
+    width: 80%;
+    top: 0%;
     left: 0%;
-    clip-path: polygon(100% 0, 100% 20%, 20% 30%, 0 30%, 0 0);
+    clip-path: polygon(calc(100% - 0.2em) 0, calc(100% - 0.2em) 20%, calc(20% + 0.1em) 30%, 0 30%, 0 0);
     color: black;
     background-color: rgba(158, 57, 238, 0.3);
     backdrop-filter: blur(2px);
     z-index: 1;
 }
 .accoladeTitle1Link {
+    position: absolute;
     height: 25%;
     width: 37%;
     background-color: rgba(158, 57, 238, 0.3);
     border: 2px solid white;
-    position: relative;
-    top: 25%;
-    left: 0%;
-    z-index: 1;
-}
-.accoladeTitle1LinkText {
-    position: relative;
-    margin-top: 1%;
-    margin-left: 5%;
-    font-family: inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2vw;
-    display: flex;
-    color: white;
+    top: -25%;
+    left: 0;
     z-index: 1;
 }
 .accoladeTitle1Text {
     position: relative;
-    top: 8%;
-    left: 12%;
+    top: 12%;
+    left: 55%;
+    transform: translate(-50%, -50%);
     font-family: inter;
     font-style: normal;
     font-weight: 500;
     font-size: 5vw;
+    font-size: 8vh;
     display: flex;
     color: white;
     z-index: 1;
-}
+    text-align: center;
+    line-height: 440px;
+    }
 .accoladeTitle2Container {
     position: absolute;
-    top: 70%;
+    top: 80%;
     right: 0%;
-    height: 15%;
+    height: 23%;
     width: 100%;
 }
 .accoladeTitle2 {
     position: absolute;
-    height: 600px;
-    width: 1000px;
-    top: 80%;
+    height: 280%;
+    width: 80%;
+    top: 0%;
     right: 0%;
     clip-path: polygon(0 20%, 70% 0, 100% 0, 100% 35%, 0 35%);
     background-color: rgba(158, 57, 238, 0.3);
@@ -93,43 +85,42 @@ body {
     z-index: 1;
 }
 .accoladeTitle2Text {
-    position: absolute;
-    top: 19%;
-    left: 20%;
+    position: relative;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%);
     font-family: inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 5vw;
+    font-size: 4.5vw;
+    font-size: 7vh;
     display: flex;
     color: white;
     z-index: 1;
+    text-align: center;
+    line-height: 200px;
 }
 .accoladeTitle2Link {
-    height: 25%;
+    position: absolute;
+    height: 15%;
     width: 45%;
     background-color: rgba(158, 57, 238, 0.3);
     border: 2px solid white;
-    position: relative;
-    top: 230%;
-    right: -55%;
+    bottom: -15%;
+    right: 0;
     z-index: 1;
 }
-.accoladeTitle2LinkText {
-    position: relative;
-    top: 10%;
-    left: 2%;
-    font-family: inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2vw;
-    display: flex;
-    color: white;
-    z-index: 1;
+.accoladeTitle3Container {
+    position: absolute;
+    top: 950px;
+    right: 0%;
+    height: 15%;
+    width: 100%;
 }
 .accoladeTitle3 {
     position: absolute;
     height: 600px;
-    width: 1000px;
+    width: 80%;
     top: 120%;
     right: 0%;
     clip-path: polygon(70% 30%, 100% 30%, 100% 0, 0 0, 0 20%);
@@ -139,7 +130,7 @@ body {
 }
 .accoladeTitle3Text {
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 20%;
     font-family: inter;
     font-style: normal;
@@ -149,6 +140,16 @@ body {
     color: white;
     z-index: 1;
 }
+/* code below for font size not resizing vertically adapted from: https://www.codecademy.com/forum_questions/50ccccd3841b2c4d760005e9 */
+.accoladeLinkText {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.8vw + 1vh);
+    font-family: inter;
+    display: flex;
+    color: white;
+}
 .iRacingIMG {
     position: absolute;
     top: 130%;
@@ -156,7 +157,7 @@ body {
     height: 30vh;
     width: 120%;
     background: url('../../images/iRacingMax.png');
-    background-position: center;
+    background-position: center fixed fixed ;
     transform: rotate(-10deg);
     z-index: 0;
     filter: brightness(55%);
@@ -168,7 +169,7 @@ body {
     border: 2px solid white;
     margin: auto;
     position: absolute;
-    top: 150%;
+    top: 1500px;
     left: 0;
     right: 0;
     z-index: 1;

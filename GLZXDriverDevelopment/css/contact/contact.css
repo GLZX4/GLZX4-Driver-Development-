@@ -5,12 +5,12 @@ body {
     position: absolute;
     top: 50%;
     left: 40%;
-    width: 80%;
-    height: 40%;
+    width: 100%;
+    height: 50%;
 }
 .findUs {
     position: absolute;
-    height: 100px;
+    height: 10%;
     width: 80%;
     background-color: rgba(158, 57, 238, 0.3);
     border: 2px solid white;
@@ -18,14 +18,19 @@ body {
     margin: auto;
     top: 35%;
     left: 10%;
+    backdrop-filter: blur(2px);
     z-index: 1;
 }
 .findUsText {
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     font-family: inter;
     color: white;
     font-size: 4vw;
+    font-size: 8vh;
     font-weight: 500;
 }
 input[type=text], select, textarea {
@@ -62,6 +67,7 @@ input[type=submit]:hover {
     left: 5%;
     background-color: rgba(158, 57, 238, 0.3);
     padding: 20px;
+    overflow: hidden;
 }
 .contactContainer label {
     color: white;
