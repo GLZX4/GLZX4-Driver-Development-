@@ -112,13 +112,40 @@ a:hover {
     cursor: pointer;
 }
 .bottomBanner {
-        height: 10%;
-        width: 100%;
-        background-color: rgba(158, 57, 238, 0.2);
-        margin: auto;
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        right: 0;
-        z-index: 1;;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    position: absolute;
+    font-family: inter;
+    font-size: calc(0.6vw + 0.6vh);
+    text-align: center;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+}
+.BBplaceHolder {
+    position: relative;
+    top: 5%;
+    left: 2%;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.BBplaceHolder2 {
+    position: absolute;
+    top: 5%;
+    left: 34%;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+.BBplaceHolder3 {
+    position: absolute;
+    top: 5%;
+    left: 66%;
+    height: 100%;
+    width: 30%;
 }
