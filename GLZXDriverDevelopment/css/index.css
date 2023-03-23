@@ -1,71 +1,467 @@
 body {
   overflow-x: hidden;
 }
-.header{
-    position: absolute;
-    width: 80%;
-    height: 20%;
-    left: 22px;
-    top: 20px;
-    z-index: 1;
-}
-/*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path*/
-.shape {
-    position: absolute;
-    width: 119%;
-    height: 400%;
-    background: #0C0C0C;
-    clip-path: polygon(0 0, 150% 0%, 100% 60%, 0 100%);
-    border-radius: 20px;
+
+@media only screen and (max-width: 768px) {
+  .header{
+      position: absolute;
+      width: 95%;
+      height: 98%;
+      left: 50%;
+      top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(-50%);
+      z-index: 1;
   }
-  
-/*code for filter below adapted from https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
-  .shape .headerIMG {
-    position: absolute;
-    background: url('../images/DSC_8968-L.jpg') no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: brightness(35%);
-}
-.tabs {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: calc(1vw + 1vh);
-    line-height: 0%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: underline;
+  /*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path*/
+  .shape {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #0C0C0C;
+      clip-path: polygon(0 0, 150% 0%, 100% 60%, 0 100%);
+      border-radius: 20px;
+    }
+    .glzxText {
+      position: relative;
+      font-style: normal;
+      font-weight: 500;
+      font-size: calc(6vw + 6vh);
+      line-height: 40px;
+      top: 25%;
+      left: 5%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFB342;
+    }
+    .driverText {
+      position: relative;
+      font-size: calc(2vw + 2vh);
+      top: 30%;
+      left: 25%;
+      color: white;
+    }
+    
+  /*code for filter below adapted from https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
+    .shape .headerIMG {
+      position: absolute;
+      background: url('../images/DSC_8968-L.jpg') no-repeat center center fixed;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      filter: brightness(35%);
+  }
+  .tabs {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: calc(1vw + 1vh);
+      line-height: 0%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-decoration: underline;
+      color: #fff;
+  }
+  /*code for both classes below adapted from: https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag */
+  .tabs a {
+    /**/
     color: #fff;
-}
-/*code for both classes below adapted from: https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag */
-.tabs a {
-  /**/
-  color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-a:hover {
-  color: aqua;
-  text-decoration: none;
-  cursor: pointer;
-}
-.downArrow {
-  position: absolute;
-  background: url(../images/IndexDownArrow.png) no-repeat center center fixed;
-  width:30px;
-  height:30px;
-  top: 70%;
-  left:45%;
-  z-index: 2;
-  cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  a:hover {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .downArrow {
+    position: absolute;
+    background: url(../images/IndexDownArrow.png) no-repeat center center fixed;
+    width:30px;
+    height:30px;
+    top: 90%;
+    left:45%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .introBox {
+    position: absolute;
+    height: 8%;
+    width: 85%;
+    background-color: rgba(158, 57, 238, 0.3);
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: auto;
+    top: 102%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .introBoxText {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: calc(1.2vw + 1.2vh);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tileContainer {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 80%;
+  }
+  .tile1 {
+    height: 30%;
+    width: 85%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 1;
+    backdrop-filter: blur(2px);
+  }
+  .tile1img {
+    position: absolute;
+    background-position: 25% 65%;
+    background-image: url('../images/DSC_1161-XL.jpg');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+  .tile2 {
+    height: 30%;
+    width: 85%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 1;;
+    backdrop-filter: blur(2px);
+  }
+  .tile2img {
+    position: absolute;
+    background-position: 45% 10%;
+    background-image: url('../images/DSC_8968-L.jpg');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+  .tile3 {
+    height: 30%;
+    width: 85%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 109%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 1;
+    backdrop-filter: blur(2px);
+  }
+  .tile3img {
+    position: absolute;
+    background-position: 50% 50%;
+    background-image: url('../images/iRacingMax.png');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+  .subtile {
+    height: 28%;
+    width: 100%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    position: relative;
+    border: 2px solid white;
+    top: 72%;
+    left: 0%;
+    overflow: hidden;
+  }
+  /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
+  .subtileText {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(1vw + 1vh);
+    display: flex;
+    margin: 2%;
+    text-align: center;
+    color: #fff;
+  }
+  .pageLink {
+    position: absolute;
+    left: 30%;
+    top: 110%;
+    color: aqua;
+    font-size: calc(1.5vw + 1.5vh);
+  }
+  .pageLink:hover {
+    color: orange;
+  }
 }
 
+
+@media only screen and (min-width: 769px) {
+  .header{
+      position: absolute;
+      width: 80%;
+      height: 98%;
+      left: 22px;
+      top: 20px;
+      z-index: 1;
+  }
+  /*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path*/
+  .shape {
+      position: absolute;
+      width: 119%;
+      height: 100%;
+      background: #0C0C0C;
+      clip-path: polygon(0 0, 150% 0%, 100% 60%, 0 100%);
+      border-radius: 20px;
+    }
+    .glzxText {
+      position: relative;
+      font-style: normal;
+      font-weight: 500;
+      font-size: calc(6vw + 6vh);
+      line-height: 40px;
+      top: 25%;
+      left: 5%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFB342;
+    }
+    .driverText {
+      position: relative;
+      font-size: calc(2vw + 2vh);
+      top: 30%;
+      left: 25%;
+      color: white;
+    }
+    
+  /*code for filter below adapted from https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
+    .shape .headerIMG {
+      position: absolute;
+      background: url('../images/DSC_8968-L.jpg') no-repeat center center fixed;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      filter: brightness(35%);
+  }
+  .tabs {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: calc(1.2vw + 1.2vh);
+      line-height: 0%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-decoration: underline;
+      color: #fff;
+  }
+  /*code for both classes below adapted from: https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag */
+  .tabs a {
+    /**/
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  a:hover {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .downArrow {
+    position: absolute;
+    background: url(../images/IndexDownArrow.png) no-repeat center center fixed;
+    width:30px;
+    height:30px;
+    top: 85%;
+    left:45%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .introBox {
+    position: absolute;
+    height: 15%;
+    width: 80%;
+    background-color: rgba(158, 57, 238, 0.3);
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: auto;
+    top: 105%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+  }
+  .introBoxText {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: calc(2vw + 2vh);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tileContainer {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+  }
+  .tile1 {
+    height: 75%;
+    width: 28%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+  }
+  .tile1img {
+    position: absolute;
+    background-position: 35% 55%;
+    background-image: url('../images/DSC_1161-XL.jpg');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+  .tile2 {
+    height: 75%;
+    width: 28%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    z-index: 1;;
+    backdrop-filter: blur(2px);
+  }
+  .tile2img {
+    position: absolute;
+    background-position: 50% 35%;
+    background-image: url('../images/DSC_8968-L.jpg');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+  .tile3 {
+    height: 75%;
+    width: 28%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+  }
+  .tile3img {
+    position: absolute;
+    background-position: 50% 35%;
+    background-image: url('../images/iRacingMax.png');
+    width: 100%;
+    height: 72%;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: -1;
+  }
+  .subtile {
+    height: 28%;
+    width: 100%;
+    background-color: rgba(158, 57, 238, 0.2);
+    margin: auto;
+    position: relative;
+    border: 2px solid white;
+    top: 72%;
+    left: 0%;
+    overflow: hidden;
+  }
+  /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
+  .subtileText {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(1vw + 1vh);
+    display: flex;
+    margin: 2%;
+    text-align: center;
+    color: #fff;
+  }
+  .pageLink {
+    position: absolute;
+    left: 30%;
+    top: 110%;
+    color: aqua;
+    font-size: calc(1.5vw + 1.5vh);
+  }
+  .pageLink:hover {
+    color: orange;
+  }
+}

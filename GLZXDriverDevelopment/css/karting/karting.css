@@ -1,215 +1,476 @@
 body {
     overflow-x: hidden;
-}
-.TileBar {
-    position: absolute;
-    height: 10%;
-    width: 80%;
-    background-color: rgba(158, 57, 238, 0.3);
-    border: 2px solid white;
-    margin: auto;
-    top: 37%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    overflow: hidden;
-}
-/*code for keeping text on the same line adapted from: https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).*/
-.tileBarText {
-    position: relative;
-    text-align: center;
+    color: white;
     font-family: inter;
-    color: white;
-    font-size: calc(2vw + 4vh);
-    white-space: nowrap;
-    font-weight: 500;
 }
-/*code for backdrop filter adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
-.tile1 {
-    height: 75%;
-    width: 28%;
-    background-color: rgba(158, 57, 238, 0.2);
-    margin: auto;
-    border: 2px solid white;
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    z-index: 1;
-    backdrop-filter: blur(2px);
-  }
-.tile1img {
-    position: absolute;
-    background-position: 50% 35%;
-    background-image: url('../../images/iRacingMax.png');
-    width: 100%;
-    height: 72%;
-    top: 36%;
-    transform: translateY(-50%);
-    left: 0%;
-    z-index: -1;
-}
-.tile2 {
-    height: 75%;
-    width: 28%;
-    background-color: rgba(158, 57, 238, 0.2);
-    margin: auto;
-    border: 2px solid white;
-    position: absolute;
-    top: 50%;
-    left: 36%;
-    z-index: 1;;
-    backdrop-filter: blur(2px);
-}
-.tile3 {
-    height: 75%;
-    width: 28%;
-    background-color: rgba(158, 57, 238, 0.2);
-    margin: auto;
-    border: 2px solid white;
-    position: absolute;
-    top: 50%;
-    left: 69%;
-    z-index: 1;
-    backdrop-filter: blur(2px);
 
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .TileBar {
+        position: absolute;
+        height: 5%;
+        width: 80%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        margin: auto;
+        top: 25%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    /*code for keeping text on the same line adapted from: https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).*/
+    .tileBarText {
+        position: relative;
+        text-align: center;
+        font-family: inter;
+        color: white;
+        font-size: calc(1vw + 2vh);
+        white-space: nowrap;
+        font-weight: 500;
+    }
+    .tileContainer {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    .tile {
+        position: absolute;
+        height: 40%;
+        width: 60%;
+        background-color: rgba(158, 57, 238, 0.2);
+    }
+    /*code for backdrop filter adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
+    .tile1 {
+        position: absolute;
+        height: 40%;
+        width: 70%;
+        margin: auto;
+        border: 2px solid white;
+        top: 0%;
+        left: 15%;
+        z-index: 1;
+        backdrop-filter: blur(2px);
+    }
+    .tile1img {
+        position: absolute;
+        background-position: 44% 40%;
+        background-image: url('../../images/iRacingMax.png');
+        width: 100%;
+        height: 72%;
+        top: 36%;
+        transform: translateY(-50%);
+        left: 0%;
+        z-index: -1;
+    }
+    .tile2 {
+        position: absolute;
+        height: 40%;
+        width: 70%;
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        top: 42%;
+        left: 15%;
+        z-index: 1;;
+        backdrop-filter: blur(2px);
+    }
+    .tile3 {
+        position: absolute;
+        height: 40%;
+        width: 70%;
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        top: 84%;
+        left: 15%;
+        z-index: 1;
+        backdrop-filter: blur(2px);
+
+    }
+    .subtile {
+        height: 28%;
+        width: 100%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        position: relative;
+        border: 2px solid white;
+        top: 72%;
+        left: -0.5%;
+        overflow: hidden;
+    }
+    /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
+    .subtileText {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(0.8vw + 0.8vh);
+        display: flex;
+        margin: 2%;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .imageScroller {
+        height: 25%;
+        width: 90%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        transform: translate(-50,-50);
+        top: 150%;
+        left: 5%;
+        z-index: 1;
+        backdrop-filter: blur(2px);
+        overflow: hidden;
+    }
+    .Myslide {
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background: url('../../images/IndexDownArrow.png');
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .next {
+        right: 2%;
+        border-radius: 3px 0 0 3px;
+        transform: rotate(-90deg);
+    }
+    .prev {
+        left: 2%;
+        transform: rotate(90deg);
+    }
+    .prev:hover, .next:hover {
+        background-color: black;
+    }
+    .captionText {
+        color: white;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .imageNumber {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    .arrayOfDots {
+        position: absolute;
+        top: 90%;
+        left: 0%;
+        align-items: center;
+    }
+    .image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        object-fit: fill;
+        object-position: 10% 10%;
+    }
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+    .infoBox {
+        position: absolute;
+        height: 10%;
+        width: 80%;
+        background-color: rgba(158, 57, 238, 0.3);
+        text-align: center;
+        font-size: calc(1.5vw + 1.5vh);
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: auto;
+        bottom: -88%;
+        left: 10%;
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .infoBoxLink {
+        color: white;
+    }
+    .infoBox:hover {
+        color: aqua;
+    }
 }
-.subtile {
-    height: 28%;
-    width: 100%;
-    background-color: rgba(158, 57, 238, 0.2);
-    margin: auto;
-    position: relative;
-    border: 2px solid white;
-    top: 72%;
-    left: -0.5%;
-    overflow: hidden;
+@media only screen and (min-width: 769px) {
+    .TileBar {
+        position: absolute;
+        height: 10%;
+        width: 80%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        margin: auto;
+        top: 37%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    /*code for keeping text on the same line adapted from: https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).*/
+    .tileBarText {
+        position: relative;
+        text-align: center;
+        font-family: inter;
+        color: white;
+        font-size: calc(2vw + 3vh);
+        white-space: nowrap;
+        font-weight: 500;
+    }
+    /*code for backdrop filter adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
+    .tile1 {
+        height: 75%;
+        width: 28%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        z-index: 1;
+        backdrop-filter: blur(2px);
+    }
+    .tile1img {
+        position: absolute;
+        background-position: 50% 35%;
+        background-image: url('../../images/iRacingMax.png');
+        width: 100%;
+        height: 72%;
+        top: 36%;
+        transform: translateY(-50%);
+        left: 0%;
+        z-index: -1;
+    }
+    .tile2 {
+        height: 75%;
+        width: 28%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        top: 50%;
+        left: 36%;
+        z-index: 1;;
+        backdrop-filter: blur(2px);
+    }
+    .tile3 {
+        height: 75%;
+        width: 28%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        top: 50%;
+        left: 69%;
+        z-index: 1;
+        backdrop-filter: blur(2px);
+
+    }
+    .subtile {
+        height: 28%;
+        width: 100%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        position: relative;
+        border: 2px solid white;
+        top: 72%;
+        left: -0.5%;
+        overflow: hidden;
+    }
+    /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
+    .subtileText {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2vw;
+        font-size: 1.8vh;
+        display: flex;
+        margin: 2%;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .imageScroller {
+        height: 40%;
+        width: 89%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        border: 2px solid white;
+        position: absolute;
+        transform: translate(-50,-50);
+        top: 130%;
+        left: 6%;
+        z-index: 1;
+        backdrop-filter: blur(2px);
+        overflow: hidden;
+    }
+    .Myslide {
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background: url('../../images/IndexDownArrow.png');
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .next {
+        right: 2%;
+        border-radius: 3px 0 0 3px;
+        transform: rotate(-90deg);
+    }
+    .prev {
+        left: 2%;
+        transform: rotate(90deg);
+    }
+    .prev:hover, .next:hover {
+        background-color: black;
+    }
+    .captionText {
+        color: white;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .imageNumber {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    .arrayOfDots {
+        position: absolute;
+        top: 90%;
+        left: 0%;
+        align-items: center;
+    }
+    .image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        object-fit: fill;
+        object-position: 10% 10%;
+    }
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+    .infoBox {
+        position: absolute;
+        height: 15%;
+        width: 80%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        font-size: calc(2.2vw + 2.2vh);
+        text-align: center;
+        border-radius: 10px;
+        margin: auto;
+        bottom: -88%;
+        left: 10%;
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .infoBoxText {
+        position: relative;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .infoBoxLink {
+        position: absolute;
+        color: white;
+        font-size: calc(1.5vw + 1.5vh);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 30%);
+    }
+    .infoBox:link:hover {
+        color: aqua;
+    }
 }
-/*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
-.subtileText {
-    position: relative;
-    left: 0%;
-    top: 0%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2vw;
-    font-size: 1.8vh;
-    display: flex;
-    margin: 2%;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
-.imageScroller {
-    height: 40%;
-    width: 89%;
-    background-color: rgba(158, 57, 238, 0.2);
-    margin: auto;
-    border: 2px solid white;
-    position: absolute;
-    transform: translate(-50,-50);
-    top: 1180px;
-    left: 6%;
-    z-index: 1;
-    backdrop-filter: blur(2px);
-    overflow: hidden;
-}
-.Myslide {
-    display: none;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background: url('../../images/IndexDownArrow.png');
-    background-size: cover;
-    background-position: center;
-    
-}
-.next {
-    right: 2%;
-    border-radius: 3px 0 0 3px;
-    transform: rotate(-90deg);
-}
-.prev {
-    left: 2%;
-    transform: rotate(90deg);
-}
-.prev:hover, .next:hover {
-    background-color: black;
-}
-.captionText {
-    color: white;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-.imageNumber {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-    background-color: #717171;
-}
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-.arrayOfDots {
-    position: absolute;
-    top: 90%;
-    left: 0%;
-    align-items: center;
-}
-.image {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    object-fit: cover;
-    object-position: 10% 10%;
-}
-@keyframes fade {
-    from {opacity: .4;}
-    to {opacity: 1;}
-}
-.infoBox {
-    position: absolute;
-    height: 15%;
-    width: 80%;
-    background-color: rgba(158, 57, 238, 0.3);
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: auto;
-    bottom: -88%;
-    left: 10%;
-    backdrop-filter: blur(2px);
-    z-index: 1;
-}
+

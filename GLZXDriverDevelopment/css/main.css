@@ -1,13 +1,254 @@
+@media only screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+    .backgroundIMG {
+        height: 100%;
+        background-size: cover;
+    }
+    header {
+        padding: 1em;
+        overflow: hidden;
+        position: absolute;
+        top: -3%;
+        left:-8%;
+        width: 100%;
+        height: 20%;
+        z-index: 1;
+    }
+    header::after{
+        content:"";
+        position:absolute;
+        top:0%;
+        left:0%;
+        height: 90%;
+        width:100%;
+        transform: skewY(-4deg);
+        background: rgba(158, 57, 238, 0.2);
+        transform-origin: bottom left;
+        z-index: -1;
+        backdrop-filter: blur(2px);
+        border: 6px solid white;
+      }
+    h1 {
+        position: relative;
+        top: 15%;
+        left: 7%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(3vw + 3vh);
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFB342;
+    }
+    h2 {
+        position: relative;
+        font-size: calc(1vw + 1vh);
+        top: 0%;
+        left: 23%;
+        color: white;
+    }
+    .mainTabs {
+        right: 0%;
+        top: 20%;
+        margin-right: 5%;
+        position: absolute;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.8em;
+        line-height: 0%;
+        display: flex;
+        transform: rotate(0deg);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+        color: #fff;
+    }
+    .mainTabs a {
+        color: white;
+        padding: 1px;
+        margin: 2px;
+    }
+    .bottomBanner {
+        height: 10%;
+        width: 100%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        position: absolute;
+        font-family: inter;
+        font-size: calc(0.6vw + 0.6vh);
+        text-align: center;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        color: white;
+    }
+    .BBplaceHolder {
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 40%;
+        height: 100%;
+    }
+    .BBplaceHolder2 {
+        display: none;
+    }
+    .BBplaceHolder3 {
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        height: 100%;
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .BBplaceHolder2 {
+        display: block;
+        top: 5%;
+        left: 32%;
+        height: 90%;
+        width: 32%;
+    }
+    .BBplaceHolder3 {
+        display: block;
+        top: 5%;
+        left: 64%;
+        height: 90%;
+        width: 32%;
+    }
+    header{
+        margin: 0; padding: 2em 5em 4em; color: #efefef;
+        overflow: hidden;
+        position: absolute;
+        top: -3%;
+        left: -3%;
+        width: 100%;
+        height: 30%;
+        z-index: 1;
+      }
+    header::after{
+        content:"";
+        position:absolute;
+        top:0%;
+        left:0%;
+        height: 90%;
+        width:100%;
+        transform: skewY(-4deg);
+        background: rgba(158, 57, 238, 0.2);
+        transform-origin: bottom left;
+        z-index: -1;
+        border: 6px solid white;
+        backdrop-filter: blur(2px);
+        overflow: hidden;
+      }
+      h1 {
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(3.5vw + 3.5vh);
+        line-height: 40px;
+        left: 0%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFB342;
+      }
+    
+      h2 {
+        position: relative;
+        font-size: calc(1.5vw + 1.5vh);
+        top: -15%;
+        left: 12%;
+        color: white;
+      }
+    
+      .mainTabs {
+        right: 0%;
+        top: 12%;
+        margin-right: 15%;
+        position: absolute;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2vw;
+        line-height: 0%;
+        display: flex;
+        transform: rotate(0deg);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+        color: #fff;
+    }
+    .mainTabs a {
+        color: #fff;
+        padding: 5px;
+        margin: 10px;
+    }
+    a:hover {
+        color: aqua;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .bottomBanner {
+        height: 10%;
+        width: 100%;
+        background-color: rgba(158, 57, 238, 0.2);
+        margin: auto;
+        position: absolute;
+        font-family: inter;
+        font-size: calc(0.5vw + 0.6vh);
+        text-align: center;
+        backdrop-filter: blur(2px);
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        color: white;
+    }
+    .BBplaceHolder {
+        position: relative;
+        top: 5%;
+        left: 2%;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+    }
+    .BBplaceHolder2 {
+        position: absolute;
+        top: 5%;
+        left: 34%;
+        height: 100%;
+        width: 30%;
+        text-align: center;
+    }
+    .BBplaceHolder3 {
+        position: absolute;
+        top: 5%;
+        left: 66%;
+        height: 100%;
+        width: 30%;
+    }
+}
+
+/*code below setting the font type globally across the site, as well as background*/
  body{
-    height: 100%;
+    height: 200vh;
+    max-width: 100%;
     overflow: visible;
     background: #1C2430;
     margin: 0;
     padding: 0;
+    font-family: inter;
 }
 .backgroundIMG {
-    height: 200vh;
-    background: url('../images/BackgroundIMG.png') center center;
+    height: 100%;
+    background: url('../images/BackgroundIMG.png') repeat-y center;
     background-repeat: repeat-y; 
     background-repeat: repeat-x;
     background-size: auto;
@@ -16,136 +257,4 @@
 }
 /*Code for background bluring adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter*/
 /*Code for using RBGA values for colours adapted from: https://www.w3schools.com/css/css_colors_rgb.asp*/
-.headerGradient{
-    position: absolute;
-    width: 115%;
-    height: calc(100vh - 500px);
-    top: -200px;
-    left:-40px;
-    background-color: rgba(158, 57, 238, 0.2);
-    transform: rotate(-6deg);
-    border: 5px solid white;
-    box-sizing: border-box;
-    z-index: -99;
-    backdrop-filter: blur(20px);
-}
-.glzxText{
-    position: relative;
-    left: 5%;
-    top: 10%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFB342;
-}
-.driverText{
-    position: relative;
-    left: 10%;
-    top: 15%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
-.glzxTextALT{
-    position: absolute;
-    left: 5%;
-    top: -25%;
-    bottom: 55%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 6vw;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFB342;
-}
-.driverTextALT {
-    position: absolute;
-    left: 15%;
-    top: 16%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
-.mainTabs {
-    right: 0%;
-    top: 2%;
-    position: absolute;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2vw;
-    line-height: 0%;
-    display: flex;
-    transform: rotate(0deg);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: underline;
-    color: #fff;
-}
-.mainTabs a {
-    color: #fff;
-    padding: 10px;
-    margin: 10px;
-}
-a:hover {
-    color: aqua;
-    text-decoration: none;
-    cursor: pointer;
-}
-.bottomBanner {
-    height: 10%;
-    width: 100%;
-    background-color: rgba(158, 57, 238, 0.2);
-    margin: auto;
-    position: absolute;
-    font-family: inter;
-    font-size: calc(0.6vw + 0.6vh);
-    text-align: center;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    color: white;
-}
-.BBplaceHolder {
-    position: relative;
-    top: 5%;
-    left: 2%;
-    width: 30%;
-    height: 100%;
-    text-align: center;
-}
-.BBplaceHolder2 {
-    position: absolute;
-    top: 5%;
-    left: 34%;
-    height: 100%;
-    width: 30%;
-    text-align: center;
-}
-.BBplaceHolder3 {
-    position: absolute;
-    top: 5%;
-    left: 66%;
-    height: 100%;
-    width: 30%;
-}
+/*code for slanted header adapted from: https://codemyui.com/single-slanted-header-angled-div/*/

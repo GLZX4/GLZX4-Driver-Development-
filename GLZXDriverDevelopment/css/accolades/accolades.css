@@ -1,189 +1,378 @@
 /*Code for limiting the clip paths viewable shape adapted from: https://www.w3schools.com/css/css_overflow.asp*/
 body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    overflow: hidden;
 }
-.linkText {
-    margin-left: 5%;
-    text-decoration: none;
-    color: rgb(163, 255, 213);
-}
-.kartIMG {
-    position: absolute;
-    top: 550px;
-    left: -10%;
-    height: 30vh;
-    width: 120%;
-    background: url('../../images/i-4hL4t85-X2.jpg');
-    background-position: center;
-    transform: rotate(10deg);
-    z-index: 0;
-    filter: brightness(55%);
-}
-.accoladeTitle1Container {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    height: 15%;
-    width: 100%;
-}
-.accoladeTitle1 {
-    position: absolute;
-    height: 500%;
-    width: 80%;
-    top: 0%;
-    left: 0%;
-    clip-path: polygon(calc(100% - 0.2em) 0, calc(100% - 0.2em) 20%, calc(20% + 0.1em) 30%, 0 30%, 0 0);
-    color: black;
-    background-color: rgba(158, 57, 238, 0.3);
-    backdrop-filter: blur(2px);
-    z-index: 1;
-}
-.accoladeTitle1Link {
-    position: absolute;
-    height: 25%;
-    width: 37%;
-    background-color: rgba(158, 57, 238, 0.3);
-    border: 2px solid white;
-    top: -25%;
-    left: 0;
-    z-index: 1;
-}
-.accoladeTitle1Text {
-    position: relative;
-    top: 12%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    font-family: inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 5vw;
-    font-size: 8vh;
-    display: flex;
-    color: white;
-    z-index: 1;
-    text-align: center;
-    line-height: 440px;
+
+@media only screen and (max-width: 768px) {
+    html,body {
+        overflow-x: hidden;
+
     }
-.accoladeTitle2Container {
-    position: absolute;
-    top: 80%;
-    right: 0%;
-    height: 23%;
-    width: 100%;
+    .linkText {
+        margin-left: 5%;
+        text-decoration: none;
+        color: rgb(163, 255, 213);
+    }
+    .kartIMG {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        width: 100%;
+        height: 30%;
+        background-position: 10% 50%;
+        background: url('../../images/i-4hL4t85-X2.jpg');
+        background-position: center;
+        z-index: 0;
+        filter: brightness(55%);
+    }
+    .accoladeTitle1Container {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 15%;
+        width: 100%;
+    }
+    .accoladeTitle1 {
+        position: absolute;
+        height: 400%;
+        width: 80%;
+        top: 0%;
+        left: 0%;
+        clip-path: polygon(calc(100% - 0.2em) 0, calc(100% - 0.2em) 20%, calc(20% + 0.1em) 30%, 0 30%, 0 0);
+        color: black;
+        background-color: rgba(158, 57, 238, 0.3);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .accoladeTitle1Link {
+        position: relative;
+        height: 15%;
+        width: 70%;
+        background-color: rgba(158, 57, 238, 0.3);
+        font-size: calc(0.8vw + 1vh);
+        border: 2px solid white;
+        top: -15%;
+        left: 0;
+        z-index: 1;
+    }
+    .accoladeTitle1Text {
+        position: relative;
+        top: 12%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(2VW + 2VH);
+        display: flex;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        line-height: 440px;
+        }
+    .accoladeTitle2Container {
+        position: absolute;
+        top: 80%;
+        right: 0%;
+        height: 15%;
+        width: 100%;
+    }
+    .accoladeTitle2 {
+        position: absolute;
+        height: 300%;
+        width: 80%;
+        top: 0%;
+        right: 0%;
+        clip-path: polygon(0 20%, 70% 0, 100% 0, 100% 35%, 0 35%);
+        background-color: rgba(158, 57, 238, 0.3);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .accoladeTitle2Text {
+        position: relative;
+        top: 20%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(1.5VW + 1.5VH);
+        display: flex;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        line-height: 200px;
+    }
+    .accoladeTitle2Link {
+        position: absolute;
+        height: 15%;
+        width: 80%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        font-size: calc(0.5vw + 0.8vh);
+        bottom: -20%;
+        right: 0;
+        z-index: 1;
+    }
+    .accoladeTitle3Container {
+        position: absolute;
+        top: 120%;
+        right: 0%;
+        height: 15%;
+        width: 100%;
+    }
+    .accoladeTitle3 {
+        position: absolute;
+        height: 400%;
+        width: 80%;
+        top: 0%;
+        right: 0%;
+        clip-path: polygon(70% 30%, 100% 30%, 100% 0, 0 0, 0 20%);
+        background-color: rgba(158, 57, 238, 0.3);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .accoladeTitle3Text {
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(2vw + 2vh);
+        display: flex;
+        color: white;
+        z-index: 1;
+    }
+    /* code below for font size not resizing vertically adapted from: https://www.codecademy.com/forum_questions/50ccccd3841b2c4d760005e9 */
+    .accoladeLinkText {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        
+        font-family: inter;
+        display: flex;
+        color: white;
+    }
+    .iRacingIMG {
+        position: absolute;
+        top: 130%;
+        left: -00%;
+        height: 20%;
+        width: 100%;
+        background: url('../../images/iRacingMax.png');
+        background-position: center fixed fixed ;
+        z-index: 0;
+        filter: brightness(55%);
+    }
+    .accoladeTitleSquare {
+        height: 15%;
+        width: 90%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        margin: auto;
+        position: absolute;
+        top: 1500px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .accoladeTitleSquareText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(2vw + 2vh);
+        display: flex;
+        color: white;
+        z-index: 1;
+    }
 }
-.accoladeTitle2 {
-    position: absolute;
-    height: 280%;
-    width: 80%;
-    top: 0%;
-    right: 0%;
-    clip-path: polygon(0 20%, 70% 0, 100% 0, 100% 35%, 0 35%);
-    background-color: rgba(158, 57, 238, 0.3);
-    backdrop-filter: blur(2px);
-    z-index: 1;
-}
-.accoladeTitle2Text {
-    position: relative;
-    top: 20%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    font-family: inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 4.5vw;
-    font-size: 7vh;
-    display: flex;
-    color: white;
-    z-index: 1;
-    text-align: center;
-    line-height: 200px;
-}
-.accoladeTitle2Link {
-    position: absolute;
-    height: 15%;
-    width: 45%;
-    background-color: rgba(158, 57, 238, 0.3);
-    border: 2px solid white;
-    bottom: -15%;
-    right: 0;
-    z-index: 1;
-}
-.accoladeTitle3Container {
-    position: absolute;
-    top: 950px;
-    right: 0%;
-    height: 15%;
-    width: 100%;
-}
-.accoladeTitle3 {
-    position: absolute;
-    height: 600px;
-    width: 80%;
-    top: 120%;
-    right: 0%;
-    clip-path: polygon(70% 30%, 100% 30%, 100% 0, 0 0, 0 20%);
-    background-color: rgba(158, 57, 238, 0.3);
-    backdrop-filter: blur(2px);
-    z-index: 1;
-}
-.accoladeTitle3Text {
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    font-family: inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 5vw;
-    display: flex;
-    color: white;
-    z-index: 1;
-}
-/* code below for font size not resizing vertically adapted from: https://www.codecademy.com/forum_questions/50ccccd3841b2c4d760005e9 */
-.accoladeLinkText {
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: calc(0.8vw + 1vh);
-    font-family: inter;
-    display: flex;
-    color: white;
-}
-.iRacingIMG {
-    position: absolute;
-    top: 130%;
-    left: -10%;
-    height: 30vh;
-    width: 120%;
-    background: url('../../images/iRacingMax.png');
-    background-position: center fixed fixed ;
-    transform: rotate(-10deg);
-    z-index: 0;
-    filter: brightness(55%);
-}
-.accoladeTitleSquare {
-    height: 15%;
-    width: 90%;
-    background-color: rgba(158, 57, 238, 0.3);
-    border: 2px solid white;
-    margin: auto;
-    position: absolute;
-    top: 1500px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-.accoladeTitleSquareText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3vw;
-    display: flex;
-    color: white;
-    z-index: 1;
+
+
+@media only screen and (min-width: 769px) {
+    .linkText {
+        margin-left: 5%;
+        text-decoration: none;
+        color: rgb(163, 255, 213);
+    }
+    .kartIMG {
+        position: absolute;
+        top: 550px;
+        left: -10%;
+        height: 30vh;
+        width: 120%;
+        background: url('../../images/i-4hL4t85-X2.jpg');
+        background-position: center;
+        transform: rotate(10deg);
+        z-index: 0;
+        filter: brightness(55%);
+    }
+    .accoladeTitle1Container {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 15%;
+        width: 100%;
+    }
+    .accoladeTitle1 {
+        position: absolute;
+        height: 500%;
+        width: 80%;
+        top: 0%;
+        left: 0%;
+        clip-path: polygon(calc(100% - 0.2em) 0, calc(100% - 0.2em) 20%, calc(20% + 0.1em) 30%, 0 30%, 0 0);
+        color: black;
+        background-color: rgba(158, 57, 238, 0.3);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .accoladeTitle1Link {
+        position: absolute;
+        height: 25%;
+        width: 37%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        top: -25%;
+        left: 0;
+        z-index: 1;
+    }
+    .accoladeTitle1Text {
+        position: relative;
+        top: 12%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(4vw + 4vh);
+        display: flex;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        line-height: 440px;
+        }
+    .accoladeTitle2Container {
+        position: absolute;
+        top: 80%;
+        right: 0%;
+        height: 23%;
+        width: 100%;
+    }
+    .accoladeTitle2 {
+        position: absolute;
+        height: 280%;
+        width: 80%;
+        top: 0%;
+        right: 0%;
+        clip-path: polygon(0 20%, 70% 0, 100% 0, 100% 35%, 0 35%);
+        background-color: rgba(158, 57, 238, 0.3);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .accoladeTitle2Text {
+        position: relative;
+        top: 20%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(3vw + 3vh);
+        display: flex;
+        color: white;
+        z-index: 1;
+        text-align: center;
+    }
+    .accoladeTitle2Link {
+        position: absolute;
+        height: 15%;
+        width: 45%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        bottom: -15%;
+        right: 0;
+        z-index: 1;
+    }
+    .accoladeTitle3Container {
+        position: absolute;
+        top: 950px;
+        right: 0%;
+        height: 15%;
+        width: 100%;
+    }
+    .accoladeTitle3 {
+        position: absolute;
+        height: 600px;
+        width: 80%;
+        top: 120%;
+        right: 0%;
+        clip-path: polygon(70% 30%, 100% 30%, 100% 0, 0 0, 0 20%);
+        background-color: rgba(158, 57, 238, 0.3);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+    .accoladeTitle3Text {
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5vw;
+        display: flex;
+        color: white;
+        z-index: 1;
+    }
+    /* code below for font size not resizing vertically adapted from: https://www.codecademy.com/forum_questions/50ccccd3841b2c4d760005e9 */
+    .accoladeLinkText {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(0.8vw + 1vh);
+        font-family: inter;
+        display: flex;
+        color: white;
+    }
+    .iRacingIMG {
+        position: absolute;
+        top: 130%;
+        left: -10%;
+        height: 20%;
+        width: 120%;
+        background: url('../../images/iRacingMax.png');
+        background-position: center fixed fixed ;
+        transform: rotate(-10deg);
+        z-index: 0;
+        filter: brightness(55%);
+    }
+    .accoladeTitleSquare {
+        height: 15%;
+        width: 90%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        margin: auto;
+        position: absolute;
+        top: 1500px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .accoladeTitleSquareText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3vw;
+        display: flex;
+        color: white;
+        z-index: 1;
+    }
 }
