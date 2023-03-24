@@ -15,7 +15,7 @@ body {
       transform: translateX(-50%);
       z-index: 1;
   }
-  /*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path*/
+  /*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path */
   .shape {
       position: absolute;
       width: 100%;
@@ -24,7 +24,9 @@ body {
       clip-path: polygon(0 0, 150% 0%, 100% 60%, 0 100%);
       border-radius: 20px;
     }
+    /*Alternate Text used for index Header as it is a completely different shape*/
     .glzxText {
+      display: inline;
       position: relative;
       font-style: normal;
       font-weight: 500;
@@ -32,7 +34,7 @@ body {
       line-height: 40px;
       top: 25%;
       left: 5%;
-      display: flex;
+      max-width: 90%;
       align-items: center;
       text-align: center;
       color: #FFB342;
@@ -40,8 +42,9 @@ body {
     .driverText {
       position: relative;
       font-size: calc(2vw + 2vh);
-      top: 30%;
-      left: 25%;
+      top: 28%;
+      left: 18%;
+      max-width: 70%;
       color: white;
     }
     
@@ -57,6 +60,8 @@ body {
       z-index: -1;
       filter: brightness(35%);
   }
+
+  /*Alternate Tabs used for index Header*/
   .tabs {
       position: absolute;
       right: 5%;
@@ -94,6 +99,7 @@ body {
     z-index: 2;
     cursor: pointer;
   }
+  /*Code for border radius adapted from: https://www.w3schools.com/cssref/css3_pr_border-radius.php */
   .introBox {
     position: absolute;
     height: 8%;
@@ -117,6 +123,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  /*ode for justifying the content to the center adapted from: https://www.w3schools.com/cssref/css3_pr_justify-content.php */
   .tileContainer {
     position: absolute;
     top: 75%;
@@ -128,12 +135,12 @@ body {
     height: 80%;
   }
   .tile1 {
+    position: absolute;
     height: 30%;
     width: 85%;
     background-color: rgba(158, 57, 238, 0.2);
     margin: auto;
     border: 2px solid white;
-    position: absolute;
     top: 45%;
     left: 50%;
     justify-content: center;
@@ -142,6 +149,7 @@ body {
     z-index: 1;
     backdrop-filter: blur(2px);
   }
+  /*Code for adjusting the viewable part of the image adapted from: https://www.w3schools.com/cssref/pr_background-position.php */
   .tile1img {
     position: absolute;
     background-position: 25% 65%;
@@ -154,12 +162,12 @@ body {
     z-index: -1;
   }
   .tile2 {
+    position: absolute;
     height: 30%;
     width: 85%;
     background-color: rgba(158, 57, 238, 0.2);
     margin: auto;
     border: 2px solid white;
-    position: absolute;
     top: 77%;
     left: 50%;
     justify-content: center;
@@ -216,7 +224,7 @@ body {
     left: 0%;
     overflow: hidden;
   }
-  /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
+  /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser */
   .subtileText {
     position: relative;
     left: 0%;
@@ -251,7 +259,6 @@ body {
       top: 20px;
       z-index: 1;
   }
-  /*Code for Clip path shapes adapted from: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_clip-path*/
   .shape {
       position: absolute;
       width: 119%;
@@ -276,12 +283,11 @@ body {
     .driverText {
       position: relative;
       font-size: calc(2vw + 2vh);
-      top: 30%;
-      left: 25%;
+      top: 32%;
+      left: 22%;
+      max-width: 70%;
       color: white;
     }
-    
-  /*code for filter below adapted from https://stackoverflow.com/questions/43938860/how-to-tint-image-with-css */
     .shape .headerIMG {
       position: absolute;
       background: url('../images/DSC_8968-L.jpg') no-repeat center center fixed;
@@ -308,7 +314,6 @@ body {
       text-decoration: underline;
       color: #fff;
   }
-  /*code for both classes below adapted from: https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag */
   .tabs a {
     /**/
     color: #fff;
@@ -441,7 +446,6 @@ body {
     left: 0%;
     overflow: hidden;
   }
-  /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
   .subtileText {
     position: relative;
     left: 0%;

@@ -1,11 +1,19 @@
+
+/*code below setting the font type globally across the site*/
+body{
+    height: 200vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #1C2430;
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    }
+
+    
 @media only screen and (max-width: 768px) {
-    body {
-        height: auto;
-    }
-    .backgroundIMG {
-        height: 100%;
-        background-size: cover;
-    }
+
+/*code for slanted header adapted from: https://codemyui.com/single-slanted-header-angled-div/ */
     header {
         padding: 1em;
         overflow: hidden;
@@ -16,6 +24,7 @@
         height: 20%;
         z-index: 1;
     }
+/*Code for background bluring adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
     header::after{
         content:"";
         position:absolute;
@@ -24,13 +33,16 @@
         height: 90%;
         width:100%;
         transform: skewY(-4deg);
+        /*Code for using RBGA values for colours adapted from: https://www.w3schools.com/css/css_colors_rgb.asp */
         background: rgba(158, 57, 238, 0.2);
         transform-origin: bottom left;
         z-index: -1;
         backdrop-filter: blur(2px);
         border: 6px solid white;
       }
-    h1 {
+      h1 {
+        display: inline;
+        max-width: 90%;
         position: relative;
         top: 15%;
         left: 7%;
@@ -44,11 +56,13 @@
         color: #FFB342;
     }
     h2 {
+        display: inline;
+        max-width: 10%;
         position: relative;
         font-size: calc(1vw + 1vh);
         top: 0%;
         left: 23%;
-        color: white;
+        color: #efefef;
     }
     .mainTabs {
         right: 0%;
@@ -69,7 +83,7 @@
         color: #fff;
     }
     .mainTabs a {
-        color: white;
+        color: #efefef;
         padding: 1px;
         margin: 2px;
     }
@@ -106,6 +120,8 @@
         width: 40%;
     }
 }
+
+
 @media only screen and (min-width: 769px) {
     .BBplaceHolder2 {
         display: block;
@@ -142,11 +158,12 @@
         background: rgba(158, 57, 238, 0.2);
         transform-origin: bottom left;
         z-index: -1;
-        border: 6px solid white;
+        border: 6px solid #efefef;
         backdrop-filter: blur(2px);
         overflow: hidden;
       }
       h1 {
+        display: inline;
         position: relative;
         font-style: normal;
         font-weight: 500;
@@ -160,11 +177,12 @@
       }
     
       h2 {
+        display: inline;
         position: relative;
         font-size: calc(1.5vw + 1.5vh);
         top: -15%;
         left: 12%;
-        color: white;
+        color: #efefef;
       }
     
       .mainTabs {
@@ -183,10 +201,10 @@
         align-items: center;
         text-align: center;
         text-decoration: underline;
-        color: #fff;
+        color: #efefef;
     }
     .mainTabs a {
-        color: #fff;
+        color: #efefef;
         padding: 5px;
         margin: 10px;
     }
@@ -209,7 +227,7 @@
         left: 0;
         right: 0;
         z-index: 1;
-        color: white;
+        color: #efefef;
     }
     .BBplaceHolder {
         position: relative;
@@ -236,25 +254,12 @@
     }
 }
 
-/*code below setting the font type globally across the site, as well as background*/
- body{
-    height: 200vh;
-    max-width: 100%;
-    overflow: visible;
-    background: #1C2430;
-    margin: 0;
-    padding: 0;
-    font-family: inter;
-}
 .backgroundIMG {
     height: 100%;
-    background: url('../images/BackgroundIMG.png') repeat-y center;
+    background: url('../images/BackgroundIMG.png') center;
     background-repeat: repeat-y; 
     background-repeat: repeat-x;
     background-size: auto;
     background-position: center;
     z-index: 0;
 }
-/*Code for background bluring adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter*/
-/*Code for using RBGA values for colours adapted from: https://www.w3schools.com/css/css_colors_rgb.asp*/
-/*code for slanted header adapted from: https://codemyui.com/single-slanted-header-angled-div/*/

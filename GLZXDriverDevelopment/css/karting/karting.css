@@ -22,7 +22,7 @@ body {
         overflow: hidden;
     }
 
-    /*code for keeping text on the same line adapted from: https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).*/
+    /*code for keeping text on the same line adapted from: https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code). */
     .tileBarText {
         position: relative;
         text-align: center;
@@ -104,7 +104,6 @@ body {
         left: -0.5%;
         overflow: hidden;
     }
-    /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
     .subtileText {
         position: relative;
         left: 0%;
@@ -254,8 +253,6 @@ body {
         z-index: 1;
         overflow: hidden;
     }
-
-    /*code for keeping text on the same line adapted from: https://css-tricks.com/almanac/properties/w/whitespace/#:~:text=If%20you%20want%20to%20prevent,line%20(in%20the%20code).*/
     .tileBarText {
         position: relative;
         text-align: center;
@@ -265,7 +262,6 @@ body {
         white-space: nowrap;
         font-weight: 500;
     }
-    /*code for backdrop filter adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
     .tile1 {
         height: 75%;
         width: 28%;
@@ -325,7 +321,6 @@ body {
         left: -0.5%;
         overflow: hidden;
     }
-    /*code for changing font size for page resizing adapted from: https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser*/
     .subtileText {
         position: relative;
         left: 0%;

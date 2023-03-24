@@ -2,17 +2,24 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: inter;
 }
 @media only screen and (max-width: 768px) {
-  
-}
-@media only screen and (min-width: 769px) {
-  .transitionContainer {
+    .transitionContainerLeft {
       position: absolute;
-      top: 50%;
+      top: 20%;
       left: 5%;
-      width: 35%;
-      height: 40%;
+      width: 60%;
+      height: 30%;
+    }
+    /*transform scaleX code to mirror the shapes on the left, code adapted from: https://www.w3schools.com/howto/howto_css_flip_image.asp */
+    .transitionContainerRight{
+      position: absolute;
+      top: 87%;
+      right: 5%;
+      width: 60%;
+      height: 30%;
+      transform: scaleX(-1);
     }
     
     .transitionBox {
@@ -26,6 +33,8 @@ body {
       top: 0%;
       left: 0%;
       backdrop-filter: blur(2px);
+      filter: brightness(35%);
+      transition: 0.3s;
       z-index: 1;
     }
     
@@ -33,6 +42,7 @@ body {
       background-color: rgba(158, 57, 238);
       cursor: pointer;
       z-index: 5;
+      filter: brightness(100%);
     }
     
     .transitionBox2 {
@@ -46,13 +56,258 @@ body {
       top: 60%;
       left: 30%;
       backdrop-filter: blur(2px);
+      filter: brightness(35%);
+      transition: 0.3s;
       z-index: 1;
     }
-    
     .transitionBox2:hover {
       background-color: rgba(158, 57, 238);
+      filter: brightness(100%);
       cursor: pointer;
       z-index: 5;
     }
+    .iRacingIMG {
+      position: absolute;
+      background: url(../../images/iRacingMax.png);
+      background-position: 40% 45%;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    .iRacingIMG2 {
+      position: absolute;
+      background: url(../../images/iRacingF3.png);
+      border-radius: 10px;
+      background-position: 40% 50%;
+      background-size: 500px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    .iRacingIMG3 {
+      position: absolute;
+      background: url(../../images/iRacingir01.png);
+      border-radius: 10px;
+      background-position: 40% 50%;
+      /*Code for adjusting image zoom adapted from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images */
+      background-size: 800px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    .iRacingIMG4 {
+      position: absolute;
+      background: url(../../images/iRacingiro1ALT.png);
+      border-radius: 10px;
+      background-position: 40% 50%;
+      background-size: 500px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    .iRacingTitleBox {
+      position: absolute;
+      width: 80%;
+      height: 15%;
+      top: 70%;
+      right: 10%;
+      background-color: rgba(158, 57, 238, 0.3);
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: calc(1.2vw + 1vh);
+      text-align: center;
+      overflow: hidden;
+      color: white;
+    }
+    .videoTitleBox {
+      position: absolute;
+      width: 90%;
+      height: 5%;
+      top: 138%;
+      left: 5%;
+      background-color: rgba(158, 57, 238, 0.3);
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: calc(1.5vw + 1.5vh);
+      text-align: center;
+      overflow: hidden;
+      color: white;
+    }
+    .mediaVideo {
+      position: absolute;
+      top: 145%;
+      left: 5%;
+      width: 90%;
+      height: 40%;
+    }
+    .video {
+      position:relative;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+    }
 }
-  
+
+
+
+@media only screen and (min-width: 769px) {
+  .transitionContainerLeft {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      width: 35%;
+      height: 40%;
+    }
+    .transitionContainerRight{
+      position: absolute;
+      top: 110%;
+      right: 5%;
+      width: 35%;
+      height: 40%;
+      transform: scaleX(-1);
+    }
+    
+    .transitionBox {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(158, 57, 238, 0.3);
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: auto;
+      top: 0%;
+      left: 0%;
+      backdrop-filter: blur(2px);
+      filter: brightness(35%);
+      transition: 0.3s;
+      z-index: 1;
+    }
+    
+    .transitionBox:hover {
+      background-color: rgba(158, 57, 238);
+      cursor: pointer;
+      z-index: 5;
+      filter: brightness(100%);
+    }
+    
+    .transitionBox2 {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(158, 57, 238, 0.3);
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: auto;
+      top: 60%;
+      left: 30%;
+      backdrop-filter: blur(2px);
+      filter: brightness(35%);
+      transition: 0.3s;
+      z-index: 1;
+    }
+    .transitionBox2:hover {
+      background-color: rgba(158, 57, 238);
+      filter: brightness(100%);
+      cursor: pointer;
+      z-index: 5;
+    }
+    .iRacingIMG {
+      position: absolute;
+      background: url(../../images/iRacingMax.png);
+      background-position: 55% 45%;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    .iRacingIMG2 {
+      position: absolute;
+      background: url(../../images/iRacingF3.png);
+      border-radius: 10px;
+      background-position: 45% 50%;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    .iRacingIMG3 {
+      position: absolute;
+      background: url(../../images/iRacingir01.png);
+      border-radius: 10px;
+      background-position: 50% 30%;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      transform: scaleX(1);
+
+    }
+    .iRacingIMG4 {
+      position: absolute;
+      background: url(../../images/iRacingiro1ALT.png);
+      border-radius: 10px;
+      background-position: 60% 60%;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      transform: scaleX(1);
+    }
+    .iRacingTitleBox {
+      position: absolute;
+      width: 40%;
+      height: 40%;
+      top: 50%;
+      right: 5%;
+      background-color: rgba(158, 57, 238, 0.3);
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: calc(1.5vw + 1vh);
+      text-align: center;
+      overflow: hidden;
+      color: white;
+    }
+    .videoTitleBox {
+      position: absolute;
+      width: 40%;
+      height: 8%;
+      top: 125%;
+      left: 3%;
+      background-color: rgba(158, 57, 238, 0.3);
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: calc(1.5vw + 1.5vh);
+      text-align: center;
+      overflow: hidden;
+      color: white;
+    }
+    .mediaVideo {
+      position: absolute;
+      top: 135%;
+      left: 3%;
+      width: 40%;
+      height: 40%;
+    }
+    .video {
+      position:relative;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+    }
+}
