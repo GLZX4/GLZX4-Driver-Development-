@@ -10,7 +10,7 @@ body{
     font-family: inter;
     }
 
-    
+/*Media Query for mobile version*/
 @media only screen and (max-width: 768px) {
 
 /*code for slanted header adapted from: https://codemyui.com/single-slanted-header-angled-div/ */
@@ -40,6 +40,7 @@ body{
         backdrop-filter: blur(2px);
         border: 6px solid white;
       }
+      /*h1 for the GL|ZX Text Section*/
       h1 {
         display: inline;
         max-width: 90%;
@@ -55,6 +56,7 @@ body{
         text-align: center;
         color: #FFB342;
     }
+    /*h2 for the Driver Development Text Section*/
     h2 {
         display: inline;
         max-width: 10%;
@@ -64,6 +66,7 @@ body{
         left: 23%;
         color: #efefef;
     }
+    /*These Tabs are seperate from the Index Tabs*/
     .mainTabs {
         right: 0%;
         top: 20%;
@@ -87,6 +90,7 @@ body{
         padding: 1px;
         margin: 2px;
     }
+    /*Footer Banner for bottom of the page*/
     .bottomBanner {
         height: 10%;
         width: 100%;
@@ -121,7 +125,7 @@ body{
     }
 }
 
-
+/*Media query for dekstop version*/
 @media only screen and (min-width: 769px) {
     .BBplaceHolder2 {
         display: block;
@@ -213,6 +217,7 @@ body{
         text-decoration: none;
         cursor: pointer;
     }
+    /*Bottom Banner for the footer which contains 3 sections of text called BBplaceHolders*/
     .bottomBanner {
         height: 10%;
         width: 100%;

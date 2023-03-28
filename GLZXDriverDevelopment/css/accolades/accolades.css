@@ -199,6 +199,7 @@ body {
         text-decoration: none;
         color: rgb(163, 255, 213);
     }
+    /*top diagonal image*/
     .kartIMG {
         position: absolute;
         top: 550px;
@@ -211,6 +212,7 @@ body {
         z-index: 0;
         filter: brightness(55%);
     }
+    /*first contaiiner for the first accoolade title*/
     .accoladeTitle1Container {
         position: absolute;
         top: 50%;
@@ -318,11 +320,11 @@ body {
     .accoladeTitle3Text {
         position: absolute;
         top: 5%;
-        left: 20%;
+        left: 25%;
         font-family: inter;
         font-style: normal;
         font-weight: 500;
-        font-size: 5vw;
+        font-size: calc(2.5vw + 2.5vh);
         display: flex;
         color: white;
         z-index: 1;
@@ -336,6 +338,7 @@ body {
         display: flex;
         color: white;
     }
+    /*second slanted image*/
     .iRacingIMG {
         position: absolute;
         top: 130%;
@@ -374,3 +377,19 @@ body {
         z-index: 1;
     }
 }
+/*
+media query so that when the page is bigger than 769px and smaller than
+ 1629px it makes the second link box bigger to accomadate the text
+*/
+@media only screen and (min-width: 769px) and (max-width: 1629px) {
+    .accoladeTitle2Link {
+        position: absolute;
+        height: 25%;
+        width: 45%;
+        background-color: rgba(158, 57, 238, 0.3);
+        border: 2px solid white;
+        bottom: -25%;
+        right: 0;
+        z-index: 1;
+    }
+  }

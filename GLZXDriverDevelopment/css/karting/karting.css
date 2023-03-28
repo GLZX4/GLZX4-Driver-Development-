@@ -117,6 +117,7 @@ body {
         text-align: center;
         color: #fff;
     }
+    /*Container for the image scoller*/
     .imageScroller {
         height: 25%;
         width: 90%;
@@ -173,6 +174,7 @@ body {
         width: 100%;
         text-align: center;
     }
+    /*number for the image being currently displayed*/
     .imageNumber {
         color: #f2f2f2;
         font-size: 12px;
@@ -239,6 +241,7 @@ body {
         color: aqua;
     }
 }
+/*Media query for larger displays*/
 @media only screen and (min-width: 769px) {
     .TileBar {
         position: absolute;

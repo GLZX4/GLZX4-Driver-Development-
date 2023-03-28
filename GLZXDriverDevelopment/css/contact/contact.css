@@ -81,15 +81,32 @@ body {
     .contactContainer label {
         color: white;
     }
+    .contactText {
+        border: 2px solid white;
+        position: absolute;
+        width: 80%;
+        height: 3%;
+        top: 110%;
+        border-radius: 10px;
+        left: 5%;
+        background-color: rgba(158, 57, 238, 0.3);
+        color: white;
+        text-align: center;
+        font-size: calc(2vw + 2vh);
+        padding: 20px;
+        backdrop-filter: blur(2px);
+        overflow: hidden;
+    }
     .imageContainer {
         border: 2px solid white;
         position: absolute;
         width: 80%;
-        height: 30%;
+        height: 20%;
         top: 80%;
         border-radius: 140px;
         left: 5%;
         background-color: rgba(158, 57, 238, 0.3);
+        color: white;
         padding: 20px;
         overflow: hidden;
         backdrop-filter: blur(2px);
@@ -104,6 +121,9 @@ body {
         background-position: center;
     }
 }
+
+
+/*Media query for larger displays*/
 @media only screen and (min-width: 769px) {
 
     .mapBox {
@@ -181,6 +201,22 @@ body {
     }
     .contactContainer label {
         color: white;
+    }
+    .contactText {
+        border: 2px solid white;
+        position: absolute;
+        width: 40%;
+        height: 5%;
+        top: 95%;
+        border-radius: 10px;
+        left: 5%;
+        background-color: rgba(158, 57, 238, 0.3);
+        color: white;
+        text-align: center;
+        font-size: calc(2vw + 2vh);
+        padding: 20px;
+        backdrop-filter: blur(2px);
+        overflow: hidden;
     }
     .imageContainer {
         border: 2px solid white;
